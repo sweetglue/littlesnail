@@ -1,6 +1,8 @@
 from django.conf.urls import patterns, include, url
 from littesnail.views import handleRequest
 
+from . import views
+
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
@@ -8,6 +10,7 @@ from littesnail.views import handleRequest
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', handleRequest),
+    url(r'^test/$', views.test, name='test'),
     # url(r'^littesnail/', include('littesnail.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

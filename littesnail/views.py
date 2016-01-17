@@ -45,6 +45,9 @@ def checkSignature(request):
 	else:
 		return None
 
+def test(request):
+	return HttpResponse("Test ok!")
+
 def responseMsg(request):
 	rawStr = smart_str(request.raw_post_data)
 	#rawStr = smart_str(request.POST['XML'])
