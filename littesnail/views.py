@@ -7,10 +7,10 @@ from django.utils.encoding import smart_str, smart_unicode
 import xml.etree.ElementTree as ET
 import urllib,urllib2,time,hashlib
 
-TOKEN = "your token"
+TOKEN = "weixin"
 
-YOUDAO_KEY = your_youdao_key
-YOUDAO_KEY_FROM = "your_youdao_key_from"
+YOUDAO_KEY = 1416234552
+YOUDAO_KEY_FROM = "Hstream"
 YOUDAO_DOC_TYPE = "xml"
 
 @csrf_exempt
