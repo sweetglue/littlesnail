@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from littesnail.views import handleRequest
+from littesnail.central_process import handleRequest
 
 from . import views
 
