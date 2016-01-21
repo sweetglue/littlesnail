@@ -52,7 +52,6 @@ def responseMsg(request):
 	#rawStr = smart_str(request.raw_post_data)
 	rawStr = smart_str(request.body)
 	#rawStr = smart_str(request.POST['XML'])
-	print rawStr
 	msg = paraseMsgXml(ET.fromstring(rawStr))
 	
 	queryStr = msg.get('Content','You have input nothing~')
